@@ -8,4 +8,7 @@ def multiply(x,y):
     return x*y
 
 def divide(x,y):
-    return x/y
+    try:
+        return x/y
+    except ZeroDivisionError:
+        raise ZeroDivisionError("Division by zero is not allowed!")
